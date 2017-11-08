@@ -142,6 +142,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Factorization.h" />
+    <ClInclude Include="FileParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Exceptioncpp.cpp" />
+    <ClCompile Include="Factorization.cpp" />
+    <ClCompile Include="FileParser.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
