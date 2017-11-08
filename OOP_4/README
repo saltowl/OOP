@@ -1,2 +1,2 @@
-This is a program that opens a text file and sequentially one by one reads from the file the numbers for which it calculates the factorization of the number (uint64_t ) into prime factors and adds the result to the output file. 
+The program opens a text file and sequentially one by one reads the numbers from the file, then it calculates the factorization of the number (uint64_t ) into prime factors and adds the result to the output file. 
 Name of the input file - is the first command line parameter, name of the output file - is the second.
