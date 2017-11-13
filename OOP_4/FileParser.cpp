@@ -10,27 +10,23 @@ void FileParser::Work()
 {
 	ifstream ifs(inFile);
 	ofstream ofs(outFile);
+
 	while (ifs.good())
 	{
 		if (ifs.good())
 		{
-			uint64_t objBeg, objEnd;
-			ifs >> objBeg;
-			objEnd = objBeg;
-			Factorization f(objEnd);
+			uint64_t obj;
+			ifs >> obj;
+			Factorization f(obj);
+			f.Calculation();
 
-			if (f.Check() != objBeg)
+			if (!f.Check())
 				throw WrongAnswer("The result of multiplication of prime divisors is not equal to the original value\n");
 
 			if (ofs.good())
-			{
-				string output = to_string(objBeg) + " : " + f.Description();
-				ofs.write(output.c_str(), output.length());
-			}
+				ofs.write(f.Description().c_str(), f.Description().length());
 			else
-			{
 				throw IOException("IO error in " + outFile + '\n');
-			}
 		}
 		else
 		{
