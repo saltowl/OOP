@@ -4,12 +4,9 @@
 
 using namespace std;
 
-FileParser::FileParser(const string& in, const string& out) : inFile(in), outFile(out)
-{
-	WorkWithFiles();
-}
+FileParser::FileParser(const string& in, const string& out) : inFile(in), outFile(out) {}
 
-void FileParser::WorkWithFiles()
+void FileParser::Work()
 {
 	ifstream ifs(inFile);
 	ofstream ofs(outFile);

@@ -9,8 +9,7 @@ public:
 	FileParser(const std::string& in, const std::string& out);
 	~FileParser() = default;
 
+	void Work();
 private:
 	const std::string inFile, outFile;
-
-	void WorkWithFiles();
 };
