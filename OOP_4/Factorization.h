@@ -8,6 +8,7 @@ class Factorization
 {
 public:
 	Factorization(uint64_t& number);
+	Factorization() = default;
 	~Factorization() = default;
 
 	void Calculation();
