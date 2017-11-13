@@ -9,9 +9,12 @@ public:
 	Factorization(uint64_t& number);
 	~Factorization() = default;
 
-	uint64_t Check() const;
+	void Calculation();
+
+	bool Check()              const;
 	std::string Description() const;
 
 private:
+	uint64_t source;
 	std::map <uint64_t, uint8_t> factors;
 };
