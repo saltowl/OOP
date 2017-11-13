@@ -2,6 +2,7 @@
 #include <map>
 #include <cstdint>
 #include <string>
+#include <iostream>
 
 class Factorization
 {
